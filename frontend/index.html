@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concessionária Placa Preta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Placa Preta - Veículos de Colecionadores</h1>
+    </header>
+    <main>
+        <h2>Nosso Estoque</h2>
+        <form id="form-cadastro">
+            <h3>Cadastrar Novo Veículo</h3>
+
+            <div class="form-grupo">
+                <input type="text" id="marca" name="marca" placeholder="Marca" required>
+                <input type="text" id="modelo" name="modelo" placeholder="Modelo" required>
+            </div>
+
+            <div class="form-grupo">
+                <input type="number" id="ano" name="ano" placeholder="Ano do Modelo" required>
+                <input type="number" id="quilometragem" name="quilometragem" placeholder="Quilometragem rodada" required>
+            </div>
+
+            <div class="form-grupo">
+                <input type="number" id="preco" name="preco" step="0.01" placeholder="Preço (ex R$1.750.000,00)" required>
+                <input type="text" id="url_foto" name="url_foto" placeholder="URL da Foto (opcional)">
+            </div>
+
+            <button type="submit" class="botao-cadastrar">Cadastrar</button>
+
+        </form>
+
+        <div id="carros-container">
+            <p>Carregando estoque...</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

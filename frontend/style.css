@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    border-bottom: 4px solid #d9a510;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #444;
+}
+
+#carros-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.card-carro {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.card-carro:hover {
+    transform: translateY(-5px); /* "levanta" o card */
+}
+
+.card-carro h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.card-carro p {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+#carros-container p {
+    font-size: 1.2em;
+    color: #777;
+    text-align: center;
+}
+
+.btn-deletar {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.btn-deletar:hover {
+    background-color: #c0392b;
+}
